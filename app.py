@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 import requests
 
 app = Flask(__name__)
@@ -12,3 +12,7 @@ def index():
         for i in resp.json():
             print('{} - купівля {} продаж {}'.format(i['ccy'], i['buy'], i['sale']))
     return render_template('index.html', name=name, resp=resp.json())
+
+@app.route('/google', methods=['GET'])
+def google():
+    return redirect("www.google.com", code=302)
