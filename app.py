@@ -15,4 +15,8 @@ def index():
 
 @app.route('/google', methods=['GET'])
 def google():
-    return redirect("www.google.com", code=302)
+    return redirect("https://www.google.com")
+
+@app.route('/matruchka', methods=['GET'])
+def matruchka():
+    return render_template("matruchka.html")
