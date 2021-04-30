@@ -20,7 +20,7 @@ style==1.1.0
 toml==0.10.0
 typing-extensions==3.7.4.1
 update==0.0.1
-urllib3==1.25.6
+urllib3==1.25.8
 uvloop==0.14.0rc2
 websockets==8.1
 Werkzeug==0.16.0
